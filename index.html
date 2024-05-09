@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Hub</title>
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <!-- navbar menu -->
+      <div class="navbar bg-base-100 w-90% m-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>about</a>
+                <!-- <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul> -->
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Sports Hub</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+              <!-- <details>
+                <summary>About</summary>
+              </details> -->
+              <a href="">About</a>
+            </li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Get Ticket</a>
+        </div>
+      </div>
+      <!-- banner section -->
+      <div class="carousel w-90% m-auto h-80 lg:h-[90vh] mb-5">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex transform -translate-y-1/2 left-5 right-5 top-72 lg:top-[30rem]"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+            class="w-full"
+          />
+          <div
+            class="absolute flex transform -translate-y-1/2 left-5 right-5 top-72 lg:top-[30rem]"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+            class="w-full"
+          />
+          <div class="absolute flex left-5 top-96">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> -->
+
+        <!-- banner note section -->
+        <!-- <div
+          class="absolute top-[22rem] right-10 lg:top[30rem] w-[566px] h-[136px] bg-black text-white flex justify-center transform translate-y-20 rounded-md items-center p-9"
+        >
+          <div>
+            <h2>Meet our most valuable player</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis perferendis voluptatum atque?
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <main>
+      <!-- banner note section -->
+      <div
+        class="w-full lg:w-[566px] h-[136px] bg-black text-white flex justify-center transform lg:-translate-y-52 m-auto lg:me-10 rounded-md items-center p-9"
+      >
+        <div>
+          <h2>Meet our most valuable player</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            perferendis voluptatum atque?
+          </p>
+        </div>
+      </div>
+      <!-- player services section -->
+      <section class="lg:-mt-40">
+        <div class="w-full lg:w-[566px] h-[136px] text-center m-auto">
+          <h1 class="text-2xl my-6">Professional Hockeys Club</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            laudantium nesciunt ad, eligendi aperiam illo.
+          </p>
+        </div>
+        <div
+          class="player-performance mx-24 flex flex-wrap gap-4 text-center my-16"
+        >
+          <div class="space-y-4 w-96 lg:w-[23%] m-auto">
+            <div
+              class="radial-progress text-teal-300"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h5>Player Facility</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, odit!
+            </p>
+          </div>
+          <div class="space-y-4 w-96 lg:w-[23%] m-auto">
+            <div
+              class="radial-progress text-pink-500"
+              style="--value: 85"
+              role="progressbar"
+            >
+              85%
+            </div>
+            <h5>Player Facility</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, odit!
+            </p>
+          </div>
+          <div class="space-y-4 w-96 lg:w-[23%] m-auto">
+            <div
+              class="radial-progress text-blue-500"
+              style="--value: 80"
+              role="progressbar"
+            >
+              80%
+            </div>
+            <h5>Player Facility</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, odit!
+            </p>
+          </div>
+          <div class="space-y-4 w-96 lg:w-[23%] m-auto">
+            <div
+              class="radial-progress text-red-500"
+              style="--value: 70"
+              role="progressbar"
+            >
+              70%
+            </div>
+            <h5>Player Facility</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, odit!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- program section -->
+      <div class="w-full lg:w-[566px] h-[136px] text-center m-auto">
+        <h1 class="text-2xl my-6">Professional Hockeys Club</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          laudantium nesciunt ad, eligendi aperiam illo.
+        </p>
+      </div>
+      <!-- program card -->
+      <div class="grid grid-cols-12 gap-6 my-8">
+        <div
+          class="bg-[url('/assets/images/2.png')] lg:ms-24 flex items-center col-span-12 lg:col-span-6 font-bold p-10 bg-no-repeat bg-cover h-80"
+        >
+          <div class="space-y-3">
+            <h2 class="text-2xl">Junior Program</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio vero explicabo ducimus deleniti repellendus corrupti
+              saepe consequatur incidunt odit ab?
+            </p>
+            <button class="btn">Register Now</button>
+          </div>
+        </div>
+        <div
+          class="bg-[url('/assets/images/3.png')] lg:me-24 flex items-center col-span-12 lg:col-span-6 font-bold p-10 bg-no-repeat bg-cover h-80"
+        >
+          <div class="space-y-3">
+            <h2 class="text-2xl">Junior Program</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio vero explicabo ducimus deleniti repellendus corrupti
+              saepe consequatur incidunt odit ab?
+            </p>
+            <button class="btn">Register Now</button>
+          </div>
+        </div>
+
+        <div
+          class="bg-[url('/assets/images/4.png')] lg:mx-24 flex items-center p-10 col-span-12 lg:col-span-12 font-bold bg-no-repeat bg-cover h-80"
+        >
+          <div class="space-y-3 w-1/2">
+            <h2 class="text-2xl">Junior Program</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio vero explicabo ducimus deleniti repellendus corrupti
+              saepe consequatur incidunt odit ab?
+            </p>
+            <button class="btn">Register Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- our new product section -->
+      <section>
+        <div class="w-full lg:w-[566px] h-[136px] text-center m-auto">
+          <h1 class="text-2xl my-6">Professional Hockeys Club</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            laudantium nesciunt ad, eligendi aperiam illo.
+          </p>
+        </div>
+        <div class="flex justify-center flex-wrap gap-4">
+          <div
+            class="w-full lg:w-5/12 flex flex-col lg:flex-row items-center gap-4 border p-8 rounded"
+          >
+            <img
+              src="./assets/Images/1.png"
+              class="lg:w-20 lg:h-20 rounded"
+              alt=""
+            />
+            <div>
+              <div>
+                <i class="fa-solid fa-star"></i> <span>5.0</span>
+                <i class="fa-solid fa-eye"></i> <span>20</span>
+                <i class="fa-regular fa-heart"></i> <span>200</span>
+              </div>
+              <h2>World Cup Flag Football</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque, impedit?
+              </p>
+              <p>Price-$321</p>
+              <span>deliver free</span>
+            </div>
+          </div>
+          <div
+            class="w-full lg:w-5/12 flex flex-col lg:flex-row items-center gap-4 border p-8 rounded"
+          >
+            <img
+              src="./assets/Images/1.png"
+              class="lg:w-20 lg:h-20 rounded"
+              alt=""
+            />
+            <div>
+              <div>
+                <i class="fa-solid fa-star"></i> <span>5.0</span>
+                <i class="fa-solid fa-eye"></i> <span>20</span>
+                <i class="fa-regular fa-heart"></i> <span>200</span>
+              </div>
+              <h2>World Cup Flag Football</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque, impedit?
+              </p>
+              <p>Price-$321</p>
+              <span>deliver free</span>
+            </div>
+          </div>
+          <div
+            class="w-full lg:w-5/12 flex flex-col lg:flex-row items-center gap-4 border p-8 rounded"
+          >
+            <img
+              src="./assets/Images/1.png"
+              class="lg:w-20 lg:h-20 rounded"
+              alt=""
+            />
+            <div>
+              <div>
+                <i class="fa-solid fa-star"></i> <span>5.0</span>
+                <i class="fa-solid fa-eye"></i> <span>20</span>
+                <i class="fa-regular fa-heart"></i> <span>200</span>
+              </div>
+              <h2>World Cup Flag Football</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque, impedit?
+              </p>
+              <p>Price-$321</p>
+              <span>deliver free</span>
+            </div>
+          </div>
+          <div
+            class="w-full lg:w-5/12 flex flex-col lg:flex-row items-center gap-4 border p-8 rounded"
+          >
+            <img
+              src="./assets/Images/1.png"
+              class="lg:w-20 lg:h-20 rounded"
+              alt=""
+            />
+            <div>
+              <div>
+                <i class="fa-solid fa-star"></i> <span>5.0</span>
+                <i class="fa-solid fa-eye"></i> <span>20</span>
+                <i class="fa-regular fa-heart"></i> <span>200</span>
+              </div>
+              <h2>World Cup Flag Football</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque, impedit?
+              </p>
+              <p>Price-$321</p>
+              <span>deliver free</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- clint questions section -->
+      <section>
+        <div class="w-full lg:w-[566px] h-[136px] text-center m-auto">
+          <h1 class="text-2xl my-6">Professional Hockeys Club</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            laudantium nesciunt ad, eligendi aperiam illo.
+          </p>
+        </div>
+        <div
+          class="w-full flex flex-col lg:flex-row items-center my-4 mb-10 gap-3 lg:px-20 rounded"
+        >
+          <img
+            src="./assets/Images/11.png"
+            class="w-full lg:w-4/12 rounded"
+            alt=""
+          />
+          <div class="w-full space-y-3">
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium">
+                Click to open this one and close others
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- get in touch section -->
+      <section class="my-16">
+        <div class="w-full lg:w-[566px] h-[136px] text-center m-auto">
+          <h1 class="text-2xl my-6">Get in touch</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            laudantium nesciunt ad, eligendi aperiam illo.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-between my-8 lg:mx-20">
+          <div class="flex flex-wrap w-full lg:w-4/12 p-8 gap-3">
+            <div class="w-full rounded p-3 bg-green-100">
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-location-dot"></i>
+              </p>
+              <p>Phone Number</p>
+              <h2>2345674576</h2>
+            </div>
+            <div class="w-full rounded p-3 bg-green-100">
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-location-dot"></i>
+              </p>
+              <p>Phone Number</p>
+              <h2>2345674576</h2>
+            </div>
+          </div>
+          <!-- contact form -->
+
+          <div class="card shrink-0 w-full lg:w-8/12 shadow-2xl bg-base-100">
+            <form class="card-body">
+              <div class="flex justify-between flex-wrap space-y-3">
+                <input
+                  type="text"
+                  placeholder="Enter You Name"
+                  class="input input-bordered w-full lg:w-6/12"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input input-bordered w-full lg:w-6/12"
+                  required
+                />
+              </div>
+              <div class="flex justify-between flex-wrap space-y-3">
+                <input
+                  type="text"
+                  placeholder="Enter You Name"
+                  class="input input-bordered w-full lg:w-6/12"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input input-bordered w-full lg:w-6/12"
+                  required
+                />
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary">Send Massage</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- social media -->
+        <div class="w-full text-center m-auto bg-gray-300 py-6">
+          <h1 class="text-2xl my-6">Social Media</h1>
+          <p class="text-3xl">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="footer py-10 bg-base-200 px-20 justify-between text-base-content"
+    >
+      <nav class="w-full border">
+        <div class="flex flex-wrap text-center">
+          <h6 class="footer-title w-full">Services</h6>
+          <a class="link link-hover w-full">Branding</a>
+          <a class="link link-hover w-full">Design</a>
+          <a class="link link-hover w-full">Marketing</a>
+          <a class="link link-hover w-full">Advertisement</a>
+        </div>
+      </nav>
+      <div class="flex gap-9 text-center">
+        <nav class="w-1/2 border">
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav class="w-1/2">
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </div>
+      <form class="w-full text-center border">
+        <h6 class="footer-title text-center">Newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text text-center">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
